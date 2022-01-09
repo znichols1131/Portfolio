@@ -67,3 +67,51 @@
 .social-icon-footer {
     height: 25px;
 }
+
+
+
+/* Project Gallery Section */
+/* Add padding BETWEEN each column (if you want) */
+.row-gallery,
+.gallery > .column-gallery {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column-gallery {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row-gallery:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btnFilter {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .btnFilter:hover {
+    background-color: #ddd;
+  }
+  
+  /* Add a dark background color to the active button */
+  .btnFilter.active {
+    background-color: #666;
+     color: white;
+  }

@@ -120,9 +120,18 @@
     <div id="Projects" class="container-fluid container-even">
       <h1 class="mb-4 d-flex justify-content-center">Projects</h1>
       
-      <div class="row row-cols-1 row-cols-md-3 g-4 mb-2">
+      <div class="mb-4 d-flex justify-content-center">
+        <div id="myBtnContainer">
+          <button class="btnFilter active" onclick="filterSelection('all')"> Show all</button>
+          <button class="btnFilter" onclick="filterSelection('MVC-App')"> MVC Apps</button>
+          <button class="btnFilter" onclick="filterSelection('API-App')"> API Apps</button>
+          <button class="btnFilter" onclick="filterSelection('Console-App')"> Console Apps</button>
+        </div>
+      </div>
+      
+      <div class="row row-gallery row-cols-1 row-cols-md-3 g-4 mb-2">
 
-        <div class="col">
+        <div class="col column-gallery MVC-App">
           <div class="card h-100">
             <img src="assets/ElevenFifty_Red.png" class="card-img-top mx-auto" alt="Eleven Fifty Red Badge">
             <div class="card-body">
@@ -142,7 +151,7 @@
           </div>
         </div>
 
-        <div class="col">
+        <div class="col column-gallery MVC-App">
           <div class="card h-100">
             <img src="assets/ElevenFifty_Red.png" class="card-img-top mx-auto" alt="Eleven Fifty Red Badge">
             <div class="card-body">
@@ -163,7 +172,7 @@
           </div>
         </div>
 
-        <div class="col">
+        <div class="col column-gallery MVC-App">
           <div class="card h-100">
             <img src="assets/ElevenFifty_Red.png" class="card-img-top mx-auto" alt="Eleven Fifty Red Badge">
             <div class="card-body">
@@ -182,10 +191,12 @@
             </div>
           </div>
         </div>
-
-        <div class="col">
+        
+        <!-- Art from https://pixabay.com/vectors/christmas-christmas-tree-gifts-6683805/ -->
+        
+          <div class="col column-gallery">
           <div class="card h-100">
-            <img src="assets/christmas-g817c7a1a8_640.png" class="card-img-top mx-auto" alt="Christmas tree">     <!-- Art from https://pixabay.com/vectors/christmas-christmas-tree-gifts-6683805/ -->
+            <img src="assets/christmas-g817c7a1a8_640.png" class="card-img-top mx-auto" alt="Christmas tree">
             <div class="card-body">
               <h5 class="card-title">2021 Advent of Code</h5>
               <p class="card-text">This was my first year participating in the Advent of Code programming puzzles. 
@@ -204,7 +215,7 @@
           </div>
         </div>
 
-        <div class="col">
+        <div class="col column-gallery Console-App API-App">
           <div class="card h-100">
             <img src="assets/ElevenFifty_Blue.png" class="card-img-top mx-auto" alt="Eleven Fifty Blue Badge">
             <div class="card-body">
@@ -225,7 +236,7 @@
           </div>
         </div>
 
-        <div class="col">
+        <div class="col column-gallery API-App">
           <div class="card h-100">
             <img src="assets/ElevenFifty_Blue.png" class="card-img-top mx-auto" alt="Eleven Fifty Blue Badge">
             <div class="card-body">
@@ -247,7 +258,7 @@
           </div>
         </div>
 
-        <div class="col">
+        <div class="col column-gallery Console-App">
           <div class="card h-100">
             <img src="assets/ElevenFifty_Gold.png" class="card-img-top mx-auto" alt="Eleven Fifty Gold Badge">
             <div class="card-body">
@@ -268,7 +279,7 @@
           </div>
         </div>
 
-        <div class="col">
+        <div class="col column-gallery Console-App">
           <div class="card h-100">
             <img src="assets/ElevenFifty_Gold.png" class="card-img-top mx-auto" alt="Eleven Fifty Gold Badge">
             <div class="card-body">
@@ -364,6 +375,7 @@
 
     <script type="text/javascript" src="contact.js"></script>
     <script type="text/javascript" src="popover.js"></script>
+    <script type="text/javascript" src="gallery.js"></script>
 
   </body>
 </html>
