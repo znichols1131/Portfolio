@@ -123,6 +123,7 @@
       <div class="mb-4 d-flex justify-content-center">
         <div id="myBtnContainer">
           <button class="btnFilter active" onclick="filterSelection('all')"> Show All</button>
+          <button class="btnFilter" onclick="filterSelection('Deployed-App')"> Deployed Apps</button>
           <button class="btnFilter" onclick="filterSelection('MVC-App')"> MVC Apps</button>
           <button class="btnFilter" onclick="filterSelection('API-App')"> API Apps</button>
           <button class="btnFilter" onclick="filterSelection('Console-App')"> Console Apps</button>
@@ -131,6 +132,32 @@
       
       <div class="row row-gallery row-cols-1 row-cols-md-3 g-4 mb-2">
 
+        <div class="col column-gallery MVC-App Deployed-App">
+          <div class="card h-100">
+            <div id="bee-background" class="mx-auto">
+              <img src="assets/Bee_Default.png" id="bee-image" class="card-img-top" alt="Bee Mascot">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">BeeGifted Gift Registry</h5>
+              <p class="card-text">As a capstone project for Eleven Fifty Academy, I created and published a gift registry website for all occasions. 
+                My inspiration was to eliminate the confusion in creating, sharing, and coordinating wish lists around the Holidays.
+                The web app uses n-tier architecture, MVC design pattern, and an Azure SQL database. See my ReadMe file for more information!
+              </p>
+            </div>
+            <div class="card-footer">
+              <div class="d-flex justify-content-center">
+                <a href="https://github.com/znichols1131/GiftRegistry" class="btn btn-secondary mb-2 mx-1">
+                  Check It Out
+                  <img src="assets/icons/github-white.svg" alt="github" class="mx-1">
+                </a>  
+                <a href="https://beegifted.azurewebsites.net/" class="btn btn-primary mb-2 mx-1">
+                  Test It Out Live
+                </a>            
+              </div>           
+            </div>
+          </div>
+        </div>
+        
         <div class="col column-gallery MVC-App">
           <div class="card h-100">
             <img src="assets/ElevenFifty_Red.png" class="card-img-top mx-auto" alt="Eleven Fifty Red Badge">
@@ -146,7 +173,7 @@
                   Check It Out
                   <img src="assets/icons/github-white.svg" alt="github" class="mx-1">
                 </a>              
-              </div>           
+              </div>                        
             </div>
           </div>
         </div>
