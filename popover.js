@@ -21,7 +21,7 @@ $(function () {
       container: 'body',
       trigger: 'hover',
       placement: 'bottom',
-      content: 'I recently graduated from Eleven Fifty Academy after obtaining Gold, Blue, and Red Badge certifications.'
+      content: 'I recently graduated from Eleven Fifty Academy after obtaining Gold, Blue, and Red Badge certifications as well as the Core Value Award for Leadership.'
     })
   })
 
