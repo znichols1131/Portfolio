@@ -3,7 +3,7 @@ $(function () {
       container: 'body',
       trigger: 'hover',
       placement: 'top',
-      content: 'I went to Purdue University.'
+      content: "Boiler Up! I'm a Purdue University alumn with degrees in Civil Engineering and Engineering Management."
     })
   })
 
@@ -12,7 +12,7 @@ $(function () {
       container: 'body',
       trigger: 'hover',
       placement: 'top',
-      content: 'I worked as a Mechanical Engineer for 3+ years.'
+      content: 'I worked as a Mechanical Engineer for 3+ years in the MEP industry.'
     })
   })
 
@@ -21,7 +21,7 @@ $(function () {
       container: 'body',
       trigger: 'hover',
       placement: 'bottom',
-      content: 'I currently attend Eleven Fifty Academy.'
+      content: 'I recently graduated from Eleven Fifty Academy after obtaining Gold, Blue, and Red Badge certifications.'
     })
   })
 
@@ -30,6 +30,6 @@ $(function () {
       container: 'body',
       trigger: 'hover',
       placement: 'bottom',
-      content: 'I currently live in Indianapolis, IN.'
+      content: "I'm a proud Hoosier currently living in Fishers, IN."
     })
   })

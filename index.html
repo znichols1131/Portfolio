@@ -8,16 +8,40 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <!-- Icon Links -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="assets/icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="assets/icons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="assets/icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="assets/icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="assets/icons/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="assets/icons/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="assets/icons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="assets/icons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="assets/icons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="assets/icons/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="assets/icons/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="assets/icons/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="assets/icons/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="assets/icons/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="assets/icons/mstile-310x310.png" />    
 
     <title>Zach Nichols</title>
 
   </head>
 
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <body data-spy="scroll" data-target=".navbar" data-offset="50" onload="scrollFunction()">
 
     <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom"> -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom navbar-expand-lg">
+
+      <div class="container-fluid col-md-10 offset-md-1">
         <span class="navbar-brand mb-0 h1">Zach Nichols</span>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,6 +64,20 @@
       </div>
     </nav>
 
+    <!-- Floating Nav Buttons -->
+    <div id="socialBar" class="col">
+      <a href="https://www.linkedin.com/in/nicholszach/" class="row socialBarButton">
+        <img class="socialBarButtonIcon" src="assets/icons/linkedin-text-white.svg" alt="LinkedIn icon"></img>
+      </a>
+      <a href="https://github.com/znichols1131" class="row socialBarButton my-1">
+        <img class="socialBarButtonIcon" src="assets/icons/github-white.svg" alt="Github icon"></img>
+      </a>
+      <a href="#" onclick="topFunction()" class="row socialBarButton">
+        <img class="socialBarButtonIcon" src="assets/icons/arrow-up-white.svg" alt="return to top of page"></img>
+      </a>
+    </div>
+
+
     <!-- Large Image -->
     <div id="landing-section" class="bg-image shadow-2-strong d-flex align-items-center justify-content-center">
       <div id="custom-mask" class="mask">
@@ -55,6 +93,7 @@
             <img id="landing-arrow-down" src="assets/icons/arrow-down-circle.svg" alt="arrow down"></img>
           </a>
         </div>
+        <p id="landing-credit">Juneau, Alaska by Zach Nichols</p>
       </div>
     </div> 
 
@@ -66,20 +105,20 @@
           <div class="col-md-7 col-sm-12">
             <h2 class="mb-1">Zach Nichols</h2>
             <h4 class="mb-3">Software Developer from Indianapolis</h4>
-            <p> I'm currently building a formal background in Software Development at Eleven Fifty Academy. 
-              After 3+ years as an MEP Engineer, I decided to chase my life-long passion of coding full-time. 
+            <p> I just finished building a formal background in Software Development at Eleven Fifty Academy. 
+              After 3+ years as a Mechanical Engineer, I decided to chase my life-long passion of coding full-time. 
               I'm no stranger to problem-solving and fast-paced team environments, and I'm excited to explore this ever-growing field.</p>
-            <p>As part of my current studies, I've used C#, ASP.NET, SQL, HTML, and CSS to create several console apps and APIs. 
-              My portfolio website and D&D Character Creator team project are just the latest examples, but I'm a perpetual learner that loves 
+            <p>As part of my recent studies, I immersed myself in C#, ASP.NET, SQL, HTML, and CSS to create a range of web MVC apps, console apps, and APIs. 
+              My BeeGifted gift registry website and D&D Character Creator team project are just the latest examples, but I'm a perpetual learner that loves 
               to tackle new coding languages and technologies for personal projects (iOS development, C/Robot C, Javascript).</p>
             <p>My experiences as a Mechanical Engineer lend me a unique perspective when it comes to problem-solving and customer-oriented solutions. 
-              As an engineer in the MEP consulting industry, I collaborated with other engineering firms, contractors, and 
+              The MEP consulting industry taught me to collaborate with other engineering firms, contractors, and 
               Fortune 500 clients to deliver comprehensive building mechanical systems in the industrial, pharmaceutical, and corporate office sectors. 
-              I headed several pipe stress analyses for steam distribution systems, provided on-site construction administration for 
+              I headed several pipe stress analyses for steam distribution systems, provided on-site construction administration through 
               turn-key operation, and secured repeat business through practical consultation and customer service.</p>
               <p>I plan to bring this same attention to detail, client interactions, and collaborative teamwork to the software development industry. 
                 I'm eager to get my foot in the door and start developing full-time! </p>
-            <a href="assets/Zach-Nichols-Resume.pdf" download class="btn btn-secondary mb-3">View My Resume</a>
+            <a href="assets/Resume - Zach Nichols.pdf" download class="btn btn-secondary mb-3">View My Resume</a>
             <a href="https://www.linkedin.com/in/nicholszach/" class="btn btn-secondary mb-3">
               <img src="assets/icons/linkedin-white.svg" alt="linkedin">
             </a>
@@ -91,23 +130,25 @@
 
           <div class="col-md-4 offset-md-1 col-sm-12">
             
-            <div class="mb-3 container">
-              <div class="row align-items-center justify-content-center">
-                <div class="col-md-6 col-sm-6 py-3 mb-1 justify-content-center">
-                  <img class="img-career popover-Purdue" src="assets/PurdueLogo.jpg" alt="Purdue logo" title="Purdue University" data-content="Hello world">
+            <div class="container align-items-center mb-3">
+              
+              <div class="row align-items-center">
+
+                <div class="col-sm py-3 mb-1 text-center">
+                  <img class="img-career popover-Purdue" src="assets/PurdueLogo.jpg" alt="Purdue logo" title="Purdue University Graduate">
                 </div>
-                <div class="col-md-6 col-sm-6 py-3 mb-1">
-                  <img class="img-career popover-MNA" src="assets/MNA-nobackground.png" alt="Mussett Nicholas logo" title="Mussett Nicholas + Associates" data-content="Hello world">
+                <div class="col-sm py-3 mb-1 text-center">
+                  <img class="img-career popover-MNA" src="assets/MNA-nobackground.png" alt="Mussett Nicholas logo" title="Former Mechanical Engineer">
                 </div>
               </div>
+              <div class="row align-items-center">
+                <div class="col-sm py-3 mb-1 text-center">
+                  <img class="img-career popover-EFA" src="assets/ElevenFifty_Red.png" alt="Eleven Fifty blue badge logo" title="Software Developer">
+                </div>
+                <div class="col-sm py-3 mb-1 text-center">
+                  <img class="img-career popover-Indiana" src="assets/Indiana-square.jpg" alt="Indiana flag" title="Indiana Resident">
+                </div>
 
-              <div class="row align-items-center justify-content-center">
-                <div class="col-md-6 col-sm-6 py-3">
-                  <img class="img-career popover-EFA" src="assets/ElevenFifty_Blue.png" alt="Eleven Fifty blue badge logo" title="Eleven Fifty Academy" data-content="Hello world">
-                </div>
-                <div class="col-md-6 col-sm-6 py-3">
-                  <img class="img-career popover-Indiana" src="assets/Indiana-square.jpg" alt="Indiana flag" title="Indiana" data-content="Hello world">
-                </div>
               </div>
 
             </div>
@@ -117,7 +158,7 @@
     </div> 
 
     <!-- Projects Section -->
-    <div id="Projects" class="container-fluid container-even">
+    <div id="Projects" class="container-fluid container-even mb-4">
       <h1 class="mb-4 d-flex justify-content-center">Projects</h1>
       
       <div class="mb-4 d-flex justify-content-center">
@@ -130,7 +171,7 @@
         </div>
       </div>
       
-      <div class="row row-gallery row-cols-1 row-cols-md-3 g-4 mb-2">
+      <div class="row row-gallery row-cols-1 row-cols-md-3 g-4">
 
         <div class="col column-gallery MVC-App Deployed-App">
           <div class="card h-100">
@@ -329,14 +370,14 @@
     
 
     <!-- Contact Section -->
-    <div id="Contact" class="container-fluid container-odd">
+    <div id="Contact" class="container-fluid container-odd mt-5">
       <h1 class="mb-4 d-flex justify-content-center">Contact Me</h1>
       <form action="https://formspree.io/f/myylrbzp" method="POST">
 
         <div class="mb-3 container">
           <div class="row align-items-start">
             <div class="col-md-6 col-sm-12 mb-2">
-              <label for="input-contact-name" class="form-label">Name</label>
+              <label for="input-contact-name" class="form-label">Name (required)</label>
               <input class="form-control" id="input-contact-name" name="name" required>
               <div class="valid-feedback">
                 Looks good!
@@ -346,7 +387,7 @@
               </div>
             </div>
             <div class="col-md-6 col-sm-12 mb-2">
-              <label for="input-contact-email" class="form-label">Email</label>
+              <label for="input-contact-email" class="form-label">Email (required)</label>
               <input type="email" name="_replyto" class="form-control" id="input-contact-email" required>
               <div class="valid-feedback">
                 Looks good!
@@ -361,7 +402,7 @@
         <div class="mb-3 container">
           <div class="row align-items-start">
             <div class="col-12">
-              <label for="input-contact-message" class="form-label">Message</label>
+              <label for="input-contact-message" class="form-label">Message (required)</label>
               <textarea class="form-control rounded-0" name="message" id="input-contact-message" rows="3" required></textarea>
               <div class="valid-feedback">
                 Looks good!
@@ -391,7 +432,7 @@
         <a href="https://www.linkedin.com/in/nicholszach/"><img class="social-icon-footer mx-1" src="assets/icons/linkedin.svg" alt="linkedin"></a>
         <a href="https://www.facebook.com/zach.nichols.334/"><img class="social-icon-footer mx-1" src="assets/icons/facebook.svg" alt="facebook"></a>
       </ul>
-      <p class="mb-1">&copy;2021 Made by Zach Nichols</p>
+      <p class="mb-1">&copy;<script>document.write(new Date().getFullYear())</script> Made by Zach Nichols</p>
       <p class="mb-1"><a href="https://themeforest.net/item/dew-personal-portfolio-template/21233334?_ga=2.168898913.1779489463.1638565179-602274635.1638565179">Inspired by Vavelo's Dew</a></p>
     </footer>
 
@@ -404,6 +445,7 @@
     <script type="text/javascript" src="contact.js"></script>
     <script type="text/javascript" src="popover.js"></script>
     <script type="text/javascript" src="gallery.js"></script>
+    <script type="text/javascript" src="scrollUp.js"></script>
 
   </body>
 </html>

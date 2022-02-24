@@ -10,8 +10,22 @@
 }
 
 #landing-section {
-    background-image: url("assets/tim-mossholder-J0sMjGu6jvQ-unsplash.jpg");
+    /* background-image: url("assets/tim-mossholder-J0sMjGu6jvQ-unsplash.jpg"); */
+    /* background-image: url("assets/backgrounds/Background_03.jpg"); */
+    background-image: url("assets/backgrounds/Background_05.jpg");
+
     height: 100vh;
+    background-size: cover;
+}
+
+#landing-credit {
+    position: absolute;
+    top: 102vh;
+    right: 0px;
+    padding-right: 15px;
+
+    color: rgba(128, 128, 128, 0.6);
+
 }
 
 #div-landing-arrow-down {
@@ -49,6 +63,10 @@
     width: 100%;
 }
 
+.navbar.navbar-custom {
+    background-color: #353A40;
+}
+
 .container-even {
     background-color: white;
 }
@@ -84,7 +102,41 @@
     height: 25px;
 }
 
+/* Scroll up button */
+#socialBar {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 15px; /* Place the button at the right of the page */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: none; /* Set a background color */
+    color: white; /* Text color */
+}
 
+.socialBarButton {
+    height: 48px;
+    width: 48px;
+    padding: 0px;
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: darkgrey; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  .socialBarButton:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+  .socialBarButtonIcon{
+    padding: 8px;
+    height: 100%;
+    width: 100%;
+  }
 
 /* Project Gallery Section */
 /* Add padding BETWEEN each column (if you want) */
@@ -96,7 +148,7 @@
 /* Create three equal columns that floats next to each other */
 .column-gallery {
   float: left;
-  width: 33.33%;
+  /* width: 33.33%; */
   display: none; /* Hide columns by default */
 }
 
