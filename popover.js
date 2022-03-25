@@ -2,7 +2,7 @@ $(function () {
     $('.popover-Purdue').popover({
       container: 'body',
       trigger: 'hover',
-      placement: 'top',
+      placement: 'bottom',
       content: "Boiler Up! I'm a Purdue University alumn with degrees in Civil Engineering and Engineering Management."
     })
   })
@@ -26,10 +26,10 @@ $(function () {
   })
 
   $(function () {
-    $('.popover-Indiana').popover({
+    $('.popover-RoboSource').popover({
       container: 'body',
       trigger: 'hover',
-      placement: 'bottom',
-      content: "I'm a proud Hoosier currently living in Fishers, IN."
+      placement: 'top',
+      content: "I joined RoboSource in 2022 as a Robotic Process Automation (RPA) Developer."
     })
   })
